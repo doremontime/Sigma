@@ -1,0 +1,85 @@
+.header {
+  &__wrapper {
+    padding: rem(8px) rem(15px);
+    .logo {
+      width: 20%;
+      text-align: center;
+    }
+    .info {
+      width: 20%;
+      text-align: center;
+      justify-content: center;
+    }
+    .__txt {
+      color: #0e2b5c;
+      margin-left: rem(10px);
+    } 
+  }
+  &__top {
+    width: 60%;
+  }
+  &__navigation {
+    margin-top: rem(15px);
+    ul {
+      padding-left: 0;
+      justify-content: space-around;
+      li {
+        a {
+          color: #0e2b5c;
+          text-transform: capitalize;
+          transition: all .3s ease;
+          &:hover {
+            color: #fc5546;
+          }
+        }
+      }
+    }
+  }
+  &__inner {
+    border-bottom: 1px solid #c8c8c8;
+    justify-content: space-evenly;
+    padding: rem(10px) 0 rem(15px);
+  }
+  
+}
+.info {
+  &__right {
+    .search,
+    .account,
+    .lang-item {
+      margin: 0 rem(20px);
+      @include pc_1500_screen() {
+        margin: 0 rem(10px);
+      }
+      img {
+        width: rem(23px);
+        height: rem(16px);
+        max-width: max-content;
+      }
+    }
+  }
+}
+
+.hotline {
+  &__img {
+    margin-right: rem(15px);
+  }
+  &__txt {
+    color: #0e2b5c;
+    white-space: nowrap;
+  }
+  &__number {
+    color: #ff053a;
+    white-space: nowrap;
+  }
+  img {
+    margin-left: rem(25px);
+    margin-right: rem(5px);
+    max-width: max-content;
+    @include pc_1300_screen() {
+      margin-left: rem(15px);
+    }
+  }
+  
+}
+

@@ -1,0 +1,28 @@
+html {
+  @include arial;
+  font-size: $base-font-size;
+  line-height: 1.5;
+}
+
+body {
+  @include arial;
+  color: $color-base;
+  font-size: inherit;
+  line-height: inherit;
+  overflow-x: hidden;
+}
+
+a {
+  color: $color-link;
+
+  &:hover {
+    color: $color-link-hover;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
