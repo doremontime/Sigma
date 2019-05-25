@@ -1,1 +1,69 @@
 @import 'blocks-default';
+
+/* Style Banner Page */
+.banner {
+  &__page {
+    background: url(../images/bg_page.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: rem(82px) 0;
+  }
+  &__txt {
+    max-width: rem(500px);
+    color: #fff;
+    margin: auto;
+    h2 {
+      font-size: rem(30px);
+      line-height: rem(21px);
+    }
+    h4 {
+      font-size: rem(14px);
+      line-height: rem(21px);
+    }
+  }
+}
+
+/* Custom Style Breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+  &-item {
+    a {
+      color: #fff;
+    }
+  }
+  > li + li:before {
+    padding: 0 3px;
+    color: #fff;
+  }
+  > .active {
+    color: #fff;
+  }
+}
+
+/* Custom Style Paging */
+.pagination > li > a {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.pagination {
+  > li.page-item {
+    a {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      margin: 0 5px;
+      font-size: rem(18px);
+      font-weight: 700;
+    }
+    &.active {
+      a {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background-color: #678dcf;
+      }
+    }
+  }
+}

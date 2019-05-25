@@ -1,1 +1,131 @@
 //@import 'user-role-form';
+/* Style page About Us */
+.about {
+  &__title {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    color: #0e2b5c;
+  }
+  &__txt {
+    font-size: rem(14px);
+    p {
+      line-height: rem(21px);
+      margin-bottom: rem(20px);
+      text-align: justify;
+      color: #1d1d1d;
+    }
+  }
+  &__history {
+    background-color: #0e2b5c;
+    color: #fff;
+    padding: rem(50px) 0 rem(70px);
+    h4 {
+      font-size: rem(30px);
+      font-weight: 700;
+      line-height: rem(44px);
+
+    }
+    .timeline {
+      &__item {
+        font-size: rem(18px);
+      }
+      &__left {
+        h5 {
+          font-size: rem(18px);
+          font-weight: 700;
+        }
+      }
+      &__right {
+        p {
+          color: #9b9aad;
+          line-height: rem(27px);
+        }
+      }
+    }
+  }
+}
+.download_document {
+  background-color: #0e2b5c;
+  display: inline-block;
+  padding: rem(18px) rem(94px);
+  border-radius: rem(50px);
+  a {
+    color: #fff;
+    font-size: rem(20px);
+    line-height: rem(30px);
+    font-weight: 700;
+  }
+  .fa-cloud-download-alt {
+    font-size: rem(24px);
+  }
+}
+
+/* Style page Project */
+.project {
+  &__remove {
+    &__bg {
+      background: transparent;
+      padding-bottom: rem(30px);
+    }
+  }
+}
+
+/* Style page Project Detail */
+.project {
+  &__info {
+    h3 {
+      font-size: rem(30px);
+      color: #102852;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    ul {
+      padding-left: 0;
+      li {
+        font-size: rem(18px);
+        color: #1d1d1d;
+        margin-top: 15px;
+      }
+      strong {
+        width: rem(115px);
+        display: inline-block;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    padding: rem(65px) 0 0;
+  }
+  &__inner {
+    margin: rem(30px) 0;
+  }
+  &__relate {
+    h3 {
+      font-size: rem(30px);
+      color: #102852;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 30px;
+      position: relative;
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: 5px;
+      }
+      &:before {
+        border-bottom: 1px solid #102852;
+        width: 60px;
+        left: 200px;
+      }
+      &:after {
+        border-bottom: 1px solid #dbd9d9;
+        width: 76%;
+        right: 0;
+      }
+    }
+  }
+}
